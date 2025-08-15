@@ -4,8 +4,8 @@ function mincost(arr)
 	let n=a.length;
 	let cost=0;
 	while(n>1){
-		let first=a.shift;
-		let second=b.shift;
+		let first=a.shift();
+		let second=a.shift();
 		let newrope=first+second;
 		let cost+=newrope;
 		a.push(newrope);
